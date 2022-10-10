@@ -1,0 +1,28 @@
+def cpf_validade(numbers = int):
+    numbers = str(input("Por favor, informe seu cpf: "))
+
+    if len(numbers) != 11:
+        print("Por favor, informe o cpf corretamente")
+        return str(input("Por favor, informe seu cpf:"))
+    else:
+        print("Carregando dados, favor aguarde. ")
+
+cpf_validade()
+
+
+def regular_conta(contadeluz, valordaconta=500.00):
+
+    contadeluz = int(input("por favor informe quantas contas de luz estão em atraso: "))
+    if contadeluz >2:
+        valorconta = float(input("por favor informe o valor da conta em atraso: "))
+    if contadeluz+valordaconta == 500.00:
+
+        print("contas em dia. ")
+        if valorconta > 500.00:
+            print("Luz Cortada.")
+        elif valorconta == 500.00:
+            print("Por favor, regularize sua fatura.")
+        else:
+            print("Sem aviso de corte.")
+
+    regular_conta()
